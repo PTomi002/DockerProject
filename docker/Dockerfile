@@ -3,4 +3,4 @@ WORKDIR /resources
 ADD . /resources
 EXPOSE 80
 ENV echoserver.environment ProductionWorld
-CMD ["java", "-jar EchoServer.jar"]
+CMD ["java", "-jar", "EchoServer.jar"]
