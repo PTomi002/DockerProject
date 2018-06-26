@@ -1,8 +1,0 @@
-docker --version
-docker run <image>
-docker image ls
-docker container ls --all
-docker build -t <name>:<tag> .
-docker run -p -d <name>:<tag>
-docker container ls
-docker stop <container id>

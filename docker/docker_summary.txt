@@ -1,0 +1,39 @@
+--------- Basics ---------
+Docker image: image is an executable package that includes everything needed to run an application
+Docker container: container is a runtime instance of an image
+Dockerfile: defines what goes on in the environment inside your container
+
+--------- Docker Services ---------
+docker-compose.yml: file is a YAML file that defines how Docker containers should behave in production
+Docker service: service only runs one image, but it codifies the way that image runs�what ports it should use, how many replicas of the container should run so the service has the capacity it needs
+
+--------- Docker Swarm ---------
+Docker Swarm: swarm is a group of machines that are running Docker and joined into a cluster.
+Commands are executed on a cluster by a swarm manager.
+The machines in a swarm can be physical or virtual.
+After joining a swarm, they are referred to as nodes.
+
+--------- Docker Stack ---------
+???
+
+--------- Docker Commands ---------
+docker --version
+docker run <image>
+docker image ls
+docker container ls --all
+docker build -t <name>:<tag> .
+docker run -p -d <name>:<tag>
+docker container ls
+docker stop <container id>
+docker tag <image> <username>/<repository>:<tag>
+
+docker login
+docker push <username>/<repository>:<tag>
+docker pull <username>/<repository>:<tag>
+
+docker swarm init
+docker stack deploy -c docker-compose.yml <service name>
+docker service ls
+docker service ps <service name>
+docker stack rm <service name>
+docker swarm leave --force
